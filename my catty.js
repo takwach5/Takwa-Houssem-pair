@@ -12,7 +12,9 @@ function Cat() {
 
  
 
-var feed = function () {
+ function feed () {
+  var img = document.getElementById("img1");
+  img.src="https://media.tenor.com/WaQ9Avqbp38AAAAj/kikicat-kikiapp.gif"
   if (this.hunger === 0) {
     return "I'm full";
   }
@@ -20,11 +22,14 @@ var feed = function () {
   this.happiness++;
   this.tiredness++;
   return "Miaaaaw, thank you";
-};
+}
+
 
  
 
-var sleep = function () {
+  function sleep () {
+  var img = document.getElementById("image3");
+  img.src="https://media.tenor.com/Y8WQ1xwb0LkAAAAi/sleepy-cat.gif"
   if (this.tiredness === 0) {
     return "I'm fine";
   }
@@ -32,11 +37,13 @@ var sleep = function () {
   this.hunger++;
   this.happiness++;
   return "Thank you";
+  
 };
 
  
-
-var pet = function () {
+function pet () {
+  var img = document.getElementById("img2");
+  img.src="https://media.tenor.com/g2H6xx_Ds94AAAAi/dog-gag.gif"
   if (this.loneliness === 0) {
     return "I'm fine";
   } else if (this.hunger === 10) {
@@ -49,4 +56,4 @@ var pet = function () {
   this.happiness++;
   this.hunger++;
   return "Thank you";
-}
+} 
