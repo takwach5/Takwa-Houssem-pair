@@ -1,3 +1,4 @@
+
 function Cat() {
   var obj = {};
   obj.happiness = Math.floor(Math.random() * 10 + 1);
@@ -11,49 +12,40 @@ function Cat() {
 }
 
  
+var mycatty=Cat()
 
- function feed () {
+ function feed() {
   var img = document.getElementById("img1");
   img.src="https://media.tenor.com/WaQ9Avqbp38AAAAj/kikicat-kikiapp.gif"
-  if (this.hunger === 0) {
-    return "I'm full";
+  if (mycatty.hunger === 0) {
+    mycatty.hunger--;
+    mycatty.happiness++
+    mycatty.tiredness++
+    document.getElementById("the  hunger").innerText = "Hunger increased. Current hunger"
   }
-  this.hunger--;
-  this.happiness++;
-  this.tiredness++;
-  return "Miaaaaw, thank you";
 }
 
 
  
 
   function sleep () {
-  var img = document.getElementById("image3");
+  var img = document.getElementById("img3");
   img.src="https://media.tenor.com/Y8WQ1xwb0LkAAAAi/sleepy-cat.gif"
-  if (this.tiredness === 0) {
-    return "I'm fine";
+  if (mycatty.tiredness === 0) {
+    mycatty.hunger++
+    mycatty.happiness++
+    mycatty.tiredness--
   }
-  this.tiredness--;
-  this.hunger++;
-  this.happiness++;
-  return "Thank you";
-  
-};
+}
 
  
 function pet () {
   var img = document.getElementById("img2");
   img.src="https://media.tenor.com/g2H6xx_Ds94AAAAi/dog-gag.gif"
-  if (this.loneliness === 0) {
-    return "I'm fine";
-  } else if (this.hunger === 10) {
-    return "I'm really hungry";
-  } else if (this.happiness === 10) {
-    return "I'm VERY happy";
-  }
-  this.tiredness++;
-  this.loneliness--;
-  this.happiness++;
-  this.hunger++;
-  return "Thank you";
-} 
+ 
+  mycatty.tiredness++
+  mycatty.loneliness--
+  mycatty.happiness++
+  mycatty.hunger++
+
+}

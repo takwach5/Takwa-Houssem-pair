@@ -84,7 +84,7 @@ margin-top: -320px;
 } 
 #imi {
 height: 70px;
-width : 70px;
+width : 90px;
 margin-top: -200px;
 margin-left: -220px;
 }
@@ -104,7 +104,7 @@ margin-left: -100px;
   } 
   #ime {
   height: 70px;
-  width : 70px;
+  width : 90px;
   margin-top: -200px;
   margin-left: -220px;
   }
@@ -115,3 +115,25 @@ margin-left: -100px;
   
   
   }
+  #hola {
+
+    justify-content: left;
+    
+    margin-right: -200px;
+    margin-top: -320px;
+    } 
+    #ima {
+    height: 70px;
+    width : 90px;
+    margin-top: -200px;
+    margin-left: -320px;
+    }
+    
+    #img3{
+    margin-left: 200px;
+    }
+h4{
+  font-family:Fantasy;
+  font-size:large;
+}
+   
