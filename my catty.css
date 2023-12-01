@@ -133,7 +133,10 @@ margin-left: -100px;
     margin-left: 200px;
     }
 h4{
-  font-family:Fantasy;
   font-size:large;
+}
+#bouton1{
+  display: block;
+
 }
    
